@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid #222;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  color: orangered;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #aaa;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.info-box {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form h3 {
+  text-align: center;
+  color: orangered;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: orangered;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, orangered, #ff4500);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+/* EXTRA SMALL DEVICES (300px and below) */
+@media (max-width: 300px) {
+
+  .contact-page {
+    padding: 10px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 12px;
+  }
+
+  /* LEFT SIDE TEXT */
+  .contact-info h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .info-box {
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* FORM */
+  .contact-form {
+    gap: 10px;
+  }
+
+  .contact-form h3 {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+  }
+
+  .contact-form textarea {
+    min-height: 80px;
+  }
+
+  .contact-form button {
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+}

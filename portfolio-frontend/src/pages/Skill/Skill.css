@@ -1,0 +1,102 @@
+.skill{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: orangered;
+    padding: 25px 20px;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: orangered;
+        position: relative;
+        padding: 40px;
+    }
+    ::after{
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: orangered;
+        margin: 10px auto;
+    }
+    .skill-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+
+        div{
+            background-color: #0a0a0a;
+            border: 1px solid orangered;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            color: orangered;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }   
+}
+
+@media (max-width: 768px) {
+    .skill h2 {
+        font-size: 2rem;
+    }
+
+    .skill-grid {
+        gap: 15px;
+    }
+
+    .skill-grid div {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        padding: 20px 10px;
+    }
+
+    .skill h2 {
+        font-size: 1.7rem;
+    }
+
+    .skill-grid {
+        gap: 10px;
+    }
+
+    .skill-grid div {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+}
+@media (max-width: 300px) {
+    .skill {
+        padding: 15px 8px;
+    }
+
+    .skill h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .skill h2::after {
+        width: 40px;
+        height: 3px;
+    }
+
+    .skill-grid {
+        gap: 8px;
+    }
+
+    .skill-grid div {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        border-radius: 30px;
+    }
+}

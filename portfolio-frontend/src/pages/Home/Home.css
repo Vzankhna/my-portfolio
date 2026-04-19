@@ -1,0 +1,124 @@
+.home{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0a0a;
+  color: orangered;
+  text-align: center;
+  padding: 0 20px;
+
+  .content{
+    max-width: 800px;
+
+    h1{
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    h2{
+      font-size: 32px;
+      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    button{
+      padding: 10px 20px;
+      font-size: 18px;
+      color: orangered;
+      background-color: transparent;
+      border: 2px solid orangered;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover{
+        background-color: orangered;
+        color: #0a0a0a;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .home .content h1 {
+    font-size: 36px;
+  }
+
+  .home .content h2 {
+    font-size: 26px;
+  }
+
+  .home .content p {
+    font-size: 18px;
+  }
+
+  .home .buttons button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 30px 15px;
+  }
+
+  .home .content h1 {
+    font-size: 28px;
+  }
+
+  .home .content h2 {
+    font-size: 22px;
+  }
+
+  .home .content p {
+    font-size: 16px;
+  }
+
+  .home .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home .buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .home {
+    padding: 20px 10px;
+  }
+
+  .home .content h1 {
+    font-size: 22px;
+  }
+
+  .home .content h2 {
+    font-size: 18px;
+  }
+
+  .home .content p {
+    font-size: 14px;
+  }
+
+  .home .buttons button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
