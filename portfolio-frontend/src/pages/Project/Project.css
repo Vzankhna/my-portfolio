@@ -132,6 +132,8 @@
 
   .card img {
     height: 120px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .card h3 {
@@ -150,6 +152,6 @@
   .close-btn {
     font-size: 1.5rem;
     top: 5px;
-    right: 10px;
+    right: 8px;
   }
 }
