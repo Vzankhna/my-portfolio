@@ -102,7 +102,6 @@
   }
 }
 
-/* ---------------- MOBILE ---------------- */
 @media (max-width: 480px) {
   .projects {
     padding: 20px 15px;
@@ -118,11 +117,10 @@
   }
 
   .card img {
-    height: 200px;
+    height: 100px;
   }
 }
 
-/* ---------------- EXTRA SMALL (≤300px) ---------------- */
 @media (max-width: 300px) {
   .projects {
     padding: 15px 10px;
@@ -133,7 +131,7 @@
   }
 
   .card img {
-    height: 160px;
+    height: 120px;
   }
 
   .card h3 {
@@ -151,7 +149,7 @@
 
   .close-btn {
     font-size: 1.5rem;
-    top: 10px;
-    right: 15px;
+    top: 5px;
+    right: 10px;
   }
 }
